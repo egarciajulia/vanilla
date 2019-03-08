@@ -438,3 +438,8 @@ require_once PATH_LIBRARY_CORE.'/functions.render.php';
 if (!defined('CLIENT_NAME')) {
     define('CLIENT_NAME', 'vanilla');
 }
+
+// Trigger SchedulerPlugin::DISPATCH_EVENT event
+register_shutdown_function(function () use ($dic) {
+    $dic->get(\Garden\EventManager::class)->fire(SchedulerPlugin::DISPATCH_EVENT);
+});
