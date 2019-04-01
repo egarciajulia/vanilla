@@ -28,6 +28,19 @@ $Configuration['Cache']['Enabled'] = true;
 $Configuration['Cache']['Method'] = 'dirtycache';
 $Configuration['Cache']['Filecache']['Store']  = PATH_CACHE.'/Filecache';
 
+// Memcached
+/*
+$Configuration['Cache']['Method'] = 'memcached';
+$Configuration['Cache']['Memcached']['Store'] = 'cache';
+$Configuration['Cache.Memcached.Option.'.Memcached::OPT_COMPRESSION] = true;
+$Configuration['Cache.Memcached.Option.'.Memcached::OPT_DISTRIBUTION] = Memcached::DISTRIBUTION_CONSISTENT;
+$Configuration['Cache.Memcached.Option.'.Memcached::OPT_LIBKETAMA_COMPATIBLE] = true;
+$Configuration['Cache.Memcached.Option.'.Memcached::OPT_NO_BLOCK] = true;
+$Configuration['Cache.Memcached.Option.'.Memcached::OPT_TCP_NODELAY] = true;
+$Configuration['Cache.Memcached.Option.'.Memcached::OPT_CONNECT_TIMEOUT] = 1000;
+$Configuration['Cache.Memcached.Option.'.Memcached::OPT_SERVER_FAILURE_LIMIT] = 2;
+ */
+
 // Technical content stuff.
 $Configuration['Garden']['ContentType'] = 'text/html';
 $Configuration['Garden']['Locale'] = 'en';

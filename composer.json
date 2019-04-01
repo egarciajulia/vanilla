@@ -30,6 +30,10 @@
         {
             "type": "vcs",
             "url": "git@github.com:egarciajulia/vanilla-scheduler.git"
+        },
+        {
+            "type": "path",
+            "url": "../vanilla-hosted-job"
         }
     ],
     "require": {
@@ -50,6 +54,7 @@
         "vanilla/garden-schema": "~1.0",
         "vanilla/garden-password": "~1.0",
         "vanilla/htmlawed": "~2.0",
+        "vanilla/hosted-job": "dev-master",
         "vanilla/legacy-oauth": "~1.0",
         "vanilla/legacy-passwords": "~1.0",
         "vanilla/nbbc": "~2.1",
@@ -93,6 +98,7 @@
     },
     "autoload-dev": {
         "psr-4": {
+            "Vanilla\\HostedJob\\Test\\": "plugins/hosted-job/tests/src",
             "VanillaTests\\": "tests",
             "VanillaTests\\Fixtures\\": "tests\\fixtures\\src",
             "GardenTests\\": "tests",
